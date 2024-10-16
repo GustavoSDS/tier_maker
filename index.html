@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Tier Maker</title>
+
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<header>
+			<h1>tier maker</h1>
+		</header>
+
+		<main>
+			<section class="tier">
+				<div class="row">
+					<aside class="label" style="--level: var(--color-s)">
+						<span contenteditable="true">S</span>
+					</aside>
+				</div>
+				<div class="row">
+					<aside class="label" style="--level: var(--color-a)">
+						<span contenteditable="true">A</span>
+					</aside>
+				</div>
+				<div class="row">
+					<aside class="label" style="--level: var(--color-b)">
+						<span contenteditable="true">B</span>
+					</aside>
+				</div>
+				<div class="row">
+					<aside class="label" style="--level: var(--color-c)">
+						<span contenteditable="true">C</span>
+					</aside>
+				</div>
+				<div class="row">
+					<aside class="label" style="--level: var(--color-d)">
+						<span contenteditable="true">D</span>
+					</aside>
+				</div>
+				<div class="row">
+					<aside class="label" style="--level: var(--color-e)">
+						<span contenteditable="true">E</span>
+					</aside>
+				</div>
+			</section>
+
+			<footer id="selector">
+				<section id="selector-buttons">
+					<label for="image-input" id="add-image-button" title="Subir imágenes">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							width="24"
+							height="24"
+							viewBox="0 0 24 24"
+							fill="none"
+							stroke="currentColor"
+							stroke-width="1"
+							stroke-linecap="round"
+							stroke-linejoin="round">
+							<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+							<path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" />
+							<path d="M9 12h6" />
+							<path d="M12 9v6" />
+						</svg>
+						<input multiple accept="image/*" type="file" id="image-input" hidden />
+					</label>
+					<button id="reset-button" title="Empezar de nuevo">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							width="24"
+							height="24"
+							viewBox="0 0 24 24"
+							fill="none"
+							stroke="currentColor"
+							stroke-width="1"
+							stroke-linecap="round"
+							stroke-linejoin="round">
+							<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+							<path d="M4.05 11a8 8 0 1 1 .5 4m-.5 5v-5h5" />
+						</svg>
+					</button>
+					<button id="save-button" title="Hacer un screenshot">
+						<svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1"  stroke-linecap="round"  stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2" /><path d="M7 11l5 5l5 -5" /><path d="M12 4l0 12" /></svg>
+					</button>
+				</section>
+				<section id="selector-items"></section>
+			</footer>
+		</main>
+
+		<script src="js/tier-maker.js" async type="module"></script>
+	</body>
+</html>
